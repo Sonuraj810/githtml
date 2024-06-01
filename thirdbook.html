@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cse</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="animate.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style type="text/css">
+        body{
+            margin:0;
+            padding: 0;
+            background:#F8F7F5;
+        } 
+        
+.teddyarea{
+    padding:0px 30px;
+    background: #F8F7F5;
+    text-align: center;
+}
+.ttt{
+    margin-top: 10px;
+}
+@media screen and (max-width:1000px) {
+    .desktop{
+        display:none;
+    }
+    .mobile{
+        display:block;
+    }
+}
+.teddy2a{
+    width:100%;
+    background:#002147;
+    margin-top:-16px;
+    overflow:hidden;
+    margin-top: 50px;
+    z-index: 1000;
+}
+.teddy2a img{
+    height:320px;
+    width:100%;
+    transition:all 1s;
+}
+.teddy2b{
+    width:100%;
+    height:300px;
+    background:#002147;
+    border:solid 2px #002147;
+    border-left: none;
+    position:relative;
+    overflow:hidden;
+    text-align:left;
+    margin-top: 60px;
+    margin-left:-30px;
+}
+
+@media screen and (max-width:1000px) {
+    .teddy2b{
+        width:95%;
+        margin-left:10px;
+        margin-top:0px;
+        border:solid 2px #002147;
+        border-top: none;
+    }
+}
+.teddy2b a:link,.teddy2b a:visited{
+    text-decoration:none;
+    color:white;
+    text-align: center;
+    font:normal 15px arial;
+    background:#002147;
+    padding:10px 15px;
+    margin-left: 20px;
+    transition:all 1s;
+}
+.teddy2a:hover .teddy2b a{
+    color:#002147;
+    background:white;
+}
+.teddy2b:hover a{
+    color:#002147;
+    background:white;
+}
+.teddy2b i{
+    color:white;
+    transition:all 1s;
+}
+.teddy2b:hover i{
+    color:#002147;
+    transform:translate(10px,0);
+}
+.over{
+    width:100%;
+    height:100%;
+    background:#F8F7F5;
+    position:absolute;
+    overflow:hidden;
+    transition: all 1s;
+}
+.tdetail{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:block;
+    color:#002147;
+    overflow:hidden;
+    transition: all 1s;
+}
+.teddy2b:hover .tdetail{
+    display:block;
+    color:white;
+}
+.teddy2b:hover .over{
+    transform:translate(-100%,-100%);
+}
+.teddy2a img:hover {
+    transform:scale(1.1,1.1);
+}
+.tdetail h1{
+    font:normal 35px arial;
+    padding:20px 20px;
+}
+.tdetail p{
+    font:normal 15px arial;
+    padding:10px 20px;
+}
+.teddyside{
+    width:0px;
+    height:0px;
+    position: relative;
+    margin-top: 40px;
+    float: right;
+    border-top:solid 60px transparent;
+    border-right:solid 60px #002147;
+    border-left:solid 60px transparent;
+}  
+
+.program1{
+    text-align:center;
+    padding-top: 5px;
+    font:normal 30px 'Ephesis', cursive;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.79);
+        margin-top:50px;
+}
+.linel{
+    height:1.9px;
+    width:100%;
+    margin:30px 0;
+        margin-top:80px;
+    background-image: linear-gradient(to right,transparent 0%,#002147 );
+}
+.liner{
+    height:1.9px;
+    width:100%;
+    margin:30px 0;
+        margin-top:80px;
+    background-image: linear-gradient(to left,transparent 0%,#002147 );
+}
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="wow.min.js">
+
+    </script>
+    <script>
+     new WOW().init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+
+        $('.hero__scroll').on('click', function(e) {
+            $('html, body').animate({
+                scrollTop: $(window).height()
+            }, 1200);
+        });
+    </script>
+</body>
+</html>
